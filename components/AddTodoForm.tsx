@@ -11,7 +11,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Plus } from "lucide-react";
 import {
   Form,
@@ -25,7 +24,7 @@ import {
 import { todoFormSchema, TodoFormValues } from "@/validation";
 import { Textarea } from "@/components/ui/textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useFieldArray, useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { createTodoListAction } from "@/actions/todoActions";
 import { Checkbox } from "./ui/checkbox";
 import { useState } from "react";

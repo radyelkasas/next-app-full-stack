@@ -11,8 +11,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Pen, Plus } from "lucide-react";
+import { Pen } from "lucide-react";
 import {
   Form,
   FormControl,
@@ -25,11 +24,8 @@ import {
 import { todoFormSchema, TodoFormValues } from "@/validation";
 import { Textarea } from "@/components/ui/textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useFieldArray, useForm } from "react-hook-form";
-import {
-  createTodoListAction,
-  updateTodoListAction,
-} from "@/actions/todoActions";
+import { useForm } from "react-hook-form";
+import { updateTodoListAction } from "@/actions/todoActions";
 import { Checkbox } from "./ui/checkbox";
 import { useState } from "react";
 import { Itodo } from "@/interfaces";
@@ -81,7 +77,7 @@ const EditTodoForm = ({ todo }: { todo: Itodo }) => {
         <DialogHeader>
           <DialogTitle>Edit New Todo</DialogTitle>
           <DialogDescription>
-            Make changes to your Todo here. Click save when you're done.
+            Make changes to your Todo here. Click save when you&apos;re done.
           </DialogDescription>
         </DialogHeader>
         <div className=" py-4">

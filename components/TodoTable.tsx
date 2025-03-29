@@ -1,20 +1,14 @@
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableFooter,
   TableHead,
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { Button } from "./ui/button";
-import { Pen, Trash } from "lucide-react";
 import { Itodo } from "@/interfaces";
 import { Badge } from "./ui/badge";
-import { deleteTodoListAction } from "@/actions/todoActions";
-import { useState } from "react";
-import Spinner from "./Spinner";
 import TodoTableActions from "./TodoTableActions";
 
 export function TodoTable({ todos }: { todos: Itodo[] }) {
